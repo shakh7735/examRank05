@@ -1,4 +1,4 @@
-#include "ATarget"
+#include "ATarget.hpp"
 
 ATarget::ATarget()
 {}

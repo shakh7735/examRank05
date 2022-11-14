@@ -1,7 +1,7 @@
 #ifndef FWOOSH_HPP
 #define FWOOSH_HPP
 
-#include "ASpell"
+#include "ASpell.hpp"
 // class ASpell;
 
 class Fwoosh: public ASpell
@@ -11,7 +11,7 @@ class Fwoosh: public ASpell
         Fwoosh(std::string, std::string);
         Fwoosh(const Fwoosh& );
         Fwoosh & operator=(const Fwoosh&);
-        virtual ~Fwoosh();
+        ~Fwoosh();
 
         ASpell* clone() const;
 };

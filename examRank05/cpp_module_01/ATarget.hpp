@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 
-#include "ASpell"
+#include "ASpell.hpp"
 class ASpell;
 
 class ATarget{

@@ -1,13 +1,13 @@
 #ifndef DUMMY_HPP
 #define DUMMY_HPP
 
-#include "ATarget"
+#include "ATarget.hpp"
 
 class Dummy: public ATarget
 {
     public:
         Dummy();
-        Dummy(std::string, std::string);
+        Dummy(std::string);
         Dummy(const Dummy& );
         Dummy & operator=(const Dummy&);
         virtual ~Dummy();

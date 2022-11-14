@@ -4,11 +4,12 @@ Fwoosh::Fwoosh() : ASpell("Fwoosh", "fwooshed")
 {}
 
 Fwoosh::Fwoosh(std::string name, std::string eff) : ASpell(name, eff)
+{}
 
 Fwoosh::~Fwoosh()
 {}
 
-Fwoosh::ASpell* clone() const
+ASpell* Fwoosh::clone() const
 {
    return (new Fwoosh(name, effects));
 }

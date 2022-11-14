@@ -1,26 +1,26 @@
 #include "Dummy.hpp"
 
-Dummy() : ATarget ("Target Practice Dummy")
+Dummy::Dummy() : ATarget ("Target Practice Dummy")
 {}
 
-Dummy(std::string type) : ATarget (type)
+Dummy::Dummy(std::string type) : ATarget (type)
 {}
 
-Dummy(const Dummy& ref) : ATarget (ref)
+Dummy::Dummy(const Dummy& ref) : ATarget (ref)
 {
 }
 
-Dummy & operator=(const Dummy& ref)
+Dummy & Dummy::operator=(const Dummy& ref)
 {
-    if (this != &src)
-		*this = src;
+    if (this != &ref)
+		*this = ref;
 	return (*this);
 }
 
-~Dummy()
+Dummy::~Dummy()
 {}
 
-ATarget* clone() const
+ATarget* Dummy::clone() const
 {
     return (new Dummy(*this));
 }
